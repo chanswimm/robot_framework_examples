@@ -1,9 +1,10 @@
 *** Settings ***
-Library        SeleniumLibrary
-Library        BuiltIn
+Library         SeleniumLibrary
+Library         BuiltIn
 
 *** Variables ***
-
+username        hello
+password        world
 *** Keywords ***
 # Headless Chrome Browser
 Open Chrome

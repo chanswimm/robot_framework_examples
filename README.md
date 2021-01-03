@@ -40,12 +40,16 @@ Set Global Variable   ${global_variable}
 ```
 
 ###### Arrays
+```
 @{array_name}   item_1    item_2    item_3
+```
 
 ###### Double Arrays
+```
 @{array_1}        item_1        item_2        item_3
 @{array_2}        item_a        item_b        item_c
 @{double_array}   ${array_1}    ${array_2}
+```
 
 ###### Change variable within a test case
 Use keyword `Set Test Variable` from [BuiltIn Library](http://robotframework.org/robotframework/latest/libraries/BuiltIn.html#Set%20Test%20Variable)
@@ -60,8 +64,11 @@ Set Test Variable   ${new_var}    10
 ###### Assign value to variable from return value (after calling function) or getting a text from Web UI
 ```
 # Python function getUsername()
-${username}     getUsername
+${username}         getUsername
 
 # Get Text from Web UI (locator)
 ${message_on_web}   Get Text    xpath://...
 ```
+
+## Useful Keywords from SeleniumLibrary and BuiltIn
+###### Run Keyword If
